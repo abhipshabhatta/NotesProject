@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note</title>
+
+</head>
+
+<body>
+    <h1>Note</h1>
+
+    <div class="card">
+
+        <div class="title">title : {{ note.title}}</div>
+        <div class="user"> user : {{user[1]}}
+        </div>
+        
+        <div class="content">
+            <p><strong>Content : </strong>{{note.content}}</p>
+            <a href="/edit_note/{{note._id}}">edit </a>
+            <a href="/delete_note/{{note._id}}">delete </a>
+        
+        </div>
+    </div>
+
+
+</body>
+</html>
